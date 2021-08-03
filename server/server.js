@@ -1,5 +1,4 @@
-const http = require('http'), express = require('express'), path = require('path'),Database = require('./Database/main'),api = require('./Api/Api');
-const { config } = require('process');
+const http = require('http'), express = require('express'), helmet = require('helmet'),cors = require("cors"),path = require('path'),Database = require('./Database/main'),api = require('./Api/Api'), config = require('./config');
 
 const app = express();
 const server = http.createServer(app);
